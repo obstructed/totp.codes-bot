@@ -74,7 +74,7 @@ class TOTPView(discord.ui.View):
             if remaining <= 0:
                 self.running = False
                 self.regenerate_button.disabled = False
-                self.regenerate_button.style = discord.ButtonStyle.blurple
+                self.regenerate_button.style = discord.ButtonStyle.grey
                 await self.message.edit(embed=self.get_embed(0), view=self)
                 break
             await self.message.edit(embed=self.get_embed(remaining), view=self)
