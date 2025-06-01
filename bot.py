@@ -3,9 +3,11 @@ from discord import app_commands
 import pyotp
 import time
 import asyncio
-import dotenv
+from dotenv import load_dotenv
+import os
 
-TOKEN = dotenv.get("TOKEN")
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 
 class MyClient(discord.Client):
     def __init__(self):
