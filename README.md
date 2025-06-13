@@ -12,4 +12,4 @@ Simply
 - install the app: [totp.codes/bot](https://discord.com/oauth2/authorize?client_id=1378516853399490620) 
 - run /totp xxxx 
 - And copy your secret key, only visible to you! 
---- 
+
